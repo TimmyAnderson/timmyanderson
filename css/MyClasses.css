@@ -5,6 +5,13 @@
 	padding: 2px;
 }
 
+.MY_BOOK_TITLE
+{
+	text-align: center;
+	margin: 10px;
+	padding: 2px;
+}
+
 .MY_MAIN
 {
 	margin: 10px;
@@ -30,6 +37,12 @@
 }
 
 .MY_BOOK_SECTION
+{
+	margin: 5px;
+	padding: 2px;
+}
+
+.MY_BOOK_DIV
 {
 	margin: 5px;
 	padding: 2px;
