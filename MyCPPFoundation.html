@@ -7,14 +7,111 @@
 </head>
 <body>
 	<header>
-		<h1>C++ Foundation</h1>
-		<section class="MY_IT_BOOK_INTRODUCTION_DIV">
-			<span>My project.</span>
+		<div>
+			<h1 class="MY_TITLE">C++ Foundation</h1>
+		</div>
+
+		<br />
+
+		<section class="MY_CPP_FOUNDATION_INTRODUCTION_DIV">
+			<span><i>C++ Foundation</i> is my simple C++ library providing many useful classes from string manipulation to TCP/IP communication. As a lightweighted library Written in raw C++, it doesn't use any of 3rd party libraries only C++ Standard library, Win32 API and Linux System Calls. C++ Foundation can be compiled on both Windows and Linux platforms.</span>
 		</section>
 	</header>
 
-	<main class="panel border border-success border border-3 rounded-3 MY_MAIN">
+	<br />
 
+	<main class="panel border border-success border border-3 rounded-3 MY_MAIN">
+		<div class="MY_CPP_FOUNDATION_DESCRIPTION">
+			<i>C++ Foundation</i> was designed to simplyfing application development on small embedded systems that can't effort to host much more robust and more resource consuming frameworks like QT or Boost.
+			<br />
+			<i>C++ Foundation</i> is written in raw C++ with a small portion of code written in native OS libraries Win32 API and Linux System Calls to implement OS specific featrues that are not provided by C++ Standard library. The library can be compiled in <b>Visual Studio</b> for Windows platform and <b>G++ 8</b> for Linux platform.
+			<br />
+			<br />
+			The following table shows the list of most important features.
+		</div>
+
+		<br />
+
+		<section class="panel MY_CPP_FOUNDATION_FEATURES_SECTION">
+			<table class="table">
+				<tr>
+					<th class="col-sm-2">Feature</th>
+					<th>Description</th>
+				</tr>
+
+				<tr>
+					<td>Collections</td>
+					<td>Mostly wrappers around C++ Standard Library collections. It provides easier to use API above STL collections and many useful methods that simplify development. There is also class <b>CByteBuffer</b> for easy byte array manipulations.</td>
+				</tr>
+
+				<tr>
+					<td>Communication</td>
+					<td>The library for TCP/IP, UDP and CAN bus communication. Since C++ Standard Library for C++ 11 doesn't provide network communication I had to implement platform specific code for both Windows and Linux platforms. The library uses asynchronous API that doesn't block more then 1 thread for up to 50 communication channels.</td>
+				</tr>
+
+				<tr>
+					<td>Console</td>
+					<td>A simple helper for working with console. Class <b>CConsoleMenu</b> allows you to create a simple console application with text menu that is very helpful if you need to create small testing console programs. I used it very often in my projects.</td>
+				</tr>
+
+				<tr>
+					<td>Exceptions</td>
+					<td>A bunch of simple exception classes. C++ Foundation uses uses exception handling for error propagation instead of return values or other means.</td>
+				</tr>
+
+				<tr>
+					<td>FileSystem</td>
+					<td>Once again a platform specific library that allows you to work with files and directories on Windows and Linux platforms. At the time of writing C++ didn't offer any elegant way to work with the file system besides C functions and rather cumbersome C++ Stream. So I wrote classes <b>CDirectory</b>, <b>CFile</b> and <b>CFilePath</b> to make the things easier.</td>
+				</tr>
+
+				<tr>
+					<td>Logger</td>
+					<td>A simple console logger.</td>
+				</tr>
+
+				<tr>
+					<td>Objects</td>
+					<td>The only class here <b>CObject</b> is a base class for all other classes in this library.</td>
+				</tr>
+
+				<tr>
+					<td>Parsing</td>
+					<td>A helpful library for the byte array parsing.</td>
+				</tr>
+
+				<tr>
+					<td>StateMachines</td>
+					<td>I needed to use state machine patter a lot, so I developed this library allowing you to work with state machines. A state machine can create subordinate state machines and wait until their job is done, so you can create a tree of interconnected state machines. State machines are a useful tool for low level programming where state machine patern is use quite often.</td>
+				</tr>
+
+				<tr>
+					<td>Strings</td>
+					<td>The core class is <b>CString</b> that provides many functionalities missing in C++ Standard Library class std::string. There is also a very useful method called Format() that mimics the functionality of C# String.Format() function using variadic templates.</td>
+				</tr>
+
+				<tr>
+					<td>Threads</td>
+					<td>Class <b>CThread</b> implements a producer-consumer pattern around C++ Standard Library class std::thread. There are also other wrappers around C++ Standard Library threading facilities providing features like locks, mutexes, auto reset events and manual reset events.</td>
+				</tr>
+
+				<tr>
+					<td>Time</td>
+					<td>The core class is <b>CTime</b> that provides similar functionalities like C# DateTime class.</td>
+				</tr>
+
+				<tr>
+					<td>Types</td>
+					<td>The most important class is <b>CSharedPointer</b> a wrapper around C++ Standard Library std::shared_ptr<T> an extremely useful class doing reference counting for naked pointers that prevents the problems with memory leaks. I used this class instead of naked pointers whenever possible. There is a small overhead but it saves you a lot of development effort.</td>
+				</tr>
+
+				<tr>
+					<th>Link:</th>
+					<td>
+						<a class="btn btn-primary" href="https://github.com/TimmyAnderson/CPPFoundation">Source codes</a>
+					</td>
+				</tr>
+			</table>
+		</section>
 
 
 
