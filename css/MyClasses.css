@@ -78,9 +78,18 @@
 	margin: 10px;
 	padding: 2px;
 }
+
 .BUTTON_BOOK
 {
 	text-align: center;
 	margin: 10px;
 	padding: 2px;
+}
+
+
+.SPAN_BOOK_SAMPLE
+{
+	font-family: 'Times New Roman', serif;
+	font-style: italic;
+	font-size: larger;
 }
