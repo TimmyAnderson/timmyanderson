@@ -39,7 +39,7 @@
 .MY_BOOK_DIV
 {
 	margin: 5px;
-	padding: 2px;
+	padding: 5px;
 }
 
 .MY_CPP_FOUNDATION_DESCRIPTION
@@ -72,6 +72,12 @@
 	padding: 2px;
 }
 
+.BUTTON_PAGE_BOOK
+{
+	text-align: center;
+	margin: 10px;
+	padding: 2px;
+}
 .BUTTON_BOOK
 {
 	text-align: center;
