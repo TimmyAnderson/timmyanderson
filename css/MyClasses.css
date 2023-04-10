@@ -79,13 +79,18 @@
 	padding: 2px;
 }
 
-.BUTTON_BOOK
+.DIV_BUTTON_BOOK
 {
 	text-align: center;
 	margin: 10px;
 	padding: 2px;
 }
 
+.DIV_PRIMARY_BUTTONS
+{
+	text-align: center;
+	margin: 10px;
+	padding: 2px;
 
 .SPAN_BOOK_SAMPLE
 {
