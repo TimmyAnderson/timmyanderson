@@ -106,3 +106,19 @@
 	margin: 10px;
 	padding: 2px;
 }
+
+.ABOUT_ME_TITLE
+{
+	text-align: center;
+	margin: 10px;
+	padding: 2px;
+}
+
+.ABOUT_ME_IMAGE
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	margin: 10px;
+}
